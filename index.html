@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" id="viewport" content="width=device-width, user-scalable=no" />
+    <title>Test task</title>
+    <!-- To speed up fonts loading -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" />
+
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" />
+  </head>
+  <body class="light-theme" style="background: #dcdcdc; max-width: 600px; margin: 0 auto; padding: 10px;">
+    <button type="button" id="darkThemeBtn">Switch to dark theme</button>
+    <button type="button" id="lightThemeBtn">Switch to light theme</button>
+    <div id="accordionGroup" class="accordion">
+      <h3 class="accordion-header">
+        <button
+          aria-expanded="true"
+          class="accordion-trigger"
+          aria-controls="sect1"
+          id="accordion1id"
+        >
+          <span class="accordion-title">
+            Accordion Item #1
+            <span class="accordion-icon"></span>
+          </span>
+        </button>
+      </h3>
+      <div id="sect1" role="region" aria-labelledby="accordion1id" class="accordion-panel">
+        dynamic content with it's own styles
+      </div>
+      <h3 class="accordion-header">
+        <button
+          aria-expanded="false"
+          class="accordion-trigger"
+          aria-controls="sect2"
+          id="accordion2id"
+        >
+          <span class="accordion-title">
+            Accordion Item #2
+            <span class="accordion-icon"></span>
+          </span>
+        </button>
+      </h3>
+      <div
+        id="sect2"
+        role="region"
+        aria-labelledby="accordion2id"
+        class="accordion-panel"
+        hidden=""
+      >
+        dynamic content with it's own styles 2
+      </div>
+    </div>
+
+    <script src="./js/theme-switcher.js"></script>
+    <script src="./js/accordion.js"></script>
+  </body>
+</html>
